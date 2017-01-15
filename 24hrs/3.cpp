@@ -110,7 +110,6 @@ int main(){
                     dp[i-1][0]+dist[d[i-1]][s[i]]+dist[s[i]][s[i+1]]+dist[s[i+1]][d[i]]); 
             }
             dp[i][1]=min((ll)INT_MAX,dp[i][1]);
-
         }
 
         cout << "Case #"<< tc << ": " << (dp[k][0]>=INT_MAX?-1:dp[k][0]) << "\n";
